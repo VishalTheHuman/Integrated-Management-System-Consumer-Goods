@@ -41,47 +41,4 @@ The Integrated Management System for Canteen, Store, and Delivery is a comprehen
 </ol>
 
 ## **Graphical User Interface (GUI) 💻**
-
-### ```Login Page```
-
-<img src="assets/readme/loginpage.png" alt="Login Page" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Dashboard```
-
-<img src="assets/readme/dashboard.png" alt="Dashboard" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Canteen```
-
-<img src="assets/readme/canteen.png" alt="Canteen" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Grocery```
-
-<img src="assets/readme/grocery.png" alt="Grocery" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Inventory```
-
-<img src="assets/readme/inventory.png" alt="Inventory" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Menu```
-
-<img src="assets/readme/menu.png" alt="Menu" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Slot```
-
-<img src="assets/readme/slot.png" alt="Slot" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Delivery```
-
-<img src="assets/readme/delivery.png" alt="Delivery" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Admin```
-
-<img src="assets/readme/admin.png" alt="Admin" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Transactions```
-
-<img src="assets/readme/transactions.png" alt="Transactions" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
-
-### ```Employee```
-
-<img src="assets/readme/employee.png" alt="Employee" style="display: block; margin: auto; max-width: 100%; height: auto; max-height: 400px;">
+<a href="assets/readme/">Click Here</a>
