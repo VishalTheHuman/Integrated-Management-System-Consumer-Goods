@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="900.0" style="-fx-background-color: d6fdd9;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfk.Dashboard">
+   <children>
+      <Text layoutX="382.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutY="568.0" mnemonicParsing="false" onAction="#exit" prefHeight="42.0" prefWidth="138.0" style="-fx-background-color: #a31414; -fx-background-radius: 0px 20px 0px 0px;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Pane prefHeight="560.0" prefWidth="910.0">
+         <children>
+            <Pane layoutY="-4.0" onMouseClicked="#canteenClick" prefHeight="282.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" onMouseClicked="#canteenClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Canteen.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="104.0" layoutY="251.0" onMouseClicked="#canteenClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Canteen">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="305.0" onMouseClicked="#groceryClick" prefHeight="282.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" onMouseClicked="#groceryClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Grocery.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="106.0" layoutY="249.0" onMouseClicked="#groceryClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Grocery">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="614.0" onMouseClicked="#inventoryClick" prefHeight="282.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" onMouseClicked="#inventoryClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Inventory.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="95.0" layoutY="249.0" onMouseClicked="#inventoryClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutY="280.0" onMouseClicked="#menuClick" prefHeight="282.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" onMouseClicked="#menuClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@menu.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="118.0" layoutY="252.0" onMouseClicked="#menuClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="305.0" layoutY="280.0" onMouseClicked="#deliveryClick" prefHeight="282.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" onMouseClicked="#deliveryClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Delivery.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="104.0" layoutY="251.0" onMouseClicked="#deliveryClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="605.0" layoutY="283.0" onMouseClicked="#adminClick" prefHeight="282.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="140.0" fitWidth="138.0" layoutX="81.0" layoutY="71.0" onMouseClicked="#adminClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Admin.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="112.0" layoutY="252.0" onMouseClicked="#adminClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button layoutX="765.0" layoutY="568.0" mnemonicParsing="false" onAction="#signOut" prefHeight="42.0" prefWidth="153.0" style="-fx-background-color: #a31414; -fx-background-radius: 20px 0px 0px 0px;" text="Sign Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

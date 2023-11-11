@@ -1,0 +1,6 @@
+Leafy vegetables,20.0
+Pulses,60.0
+Bread,30.0
+Milk 1L,50.0
+Tomato 1Kg,150.0
+Guava 1Kg,80.0

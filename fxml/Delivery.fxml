@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="610.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfk.Delivery">
+   <children>
+      <Pane prefHeight="110.0" prefWidth="900.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="59.0" prefWidth="156.0" style="-fx-background-color: AA77FF; -fx-background-radius: 0px 0px 40px 0px;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+            <Text layoutX="684.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="110.0" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: AA77FF;">
+      <children>
+         <Label layoutX="28.0" layoutY="75.0" text="Order ID :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="28.0" layoutY="109.0" text="Person :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="28.0" layoutY="145.0" text="Status :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="orderIDAction" layoutX="102.0" layoutY="74.0" promptText="Enter Order ID" />
+         <TextField fx:id="deliveryPerson" layoutX="102.0" layoutY="109.0" promptText="Enter Delivery Person" />
+         <CheckBox fx:id="deliveredActions" layoutX="102.0" layoutY="146.0" mnemonicParsing="false" text="Delivered" textFill="WHITE" />
+         <Button layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#assign" prefHeight="30.0" prefWidth="119.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;" text="Assign">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Button>
+         <Text fill="WHITE" layoutX="78.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actions">
+            <font>
+               <Font name="System Bold" size="34.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="88.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+            <font>
+               <Font name="System Bold" size="34.0" />
+            </font>
+         </Text>
+         <Label layoutX="28.0" layoutY="282.0" text="Order ID :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="orderIDStatus" layoutX="100.0" layoutY="279.0" promptText="Enter Order ID" />
+         <Label layoutX="28.0" layoutY="314.0" text="Status :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <CheckBox fx:id="deliveredStatus" layoutX="101.0" layoutY="315.0" mnemonicParsing="false" text="Delivered" textFill="WHITE" />
+         <Button layoutX="24.0" layoutY="346.0" mnemonicParsing="false" onAction="#setStatus" prefHeight="30.0" prefWidth="227.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;" text="Set Status">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Button>
+         <Button layoutX="26.0" layoutY="421.0" mnemonicParsing="false" onAction="#checkStatus" prefHeight="30.0" prefWidth="227.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;" text="Check Status">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Button>
+         <Label layoutX="27.0" layoutY="390.0" text="Status :" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <Text fx:id="deliveredText" fill="RED" layoutX="100.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivered" visible="false">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Text>
+         <Text fx:id="deliveredText1" fill="RED" layoutX="100.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Delivered" visible="false">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Text>
+         <Line endX="-102.80001831054688" endY="473.0" layoutX="386.0" layoutY="27.0" startX="-102.80001831054688" startY="-27.0" stroke="WHITE" strokeWidth="3.0" />
+            <TableView fx:id="deliveryTable" layoutX="294.0" layoutY="12.0" prefHeight="476.0" prefWidth="596.0">
+         <columns>
+            <TableColumn fx:id="taborderId" prefWidth="211.99993896484375" text="Order ID" />
+            <TableColumn fx:id="tabPerson" prefWidth="269.6000671386719" text="Person" />
+            <TableColumn fx:id="tabStatus" prefWidth="113.60003662109375" text="Status" />
+         </columns>
+      </TableView>
+            <Button layoutX="154.0" layoutY="179.0" mnemonicParsing="false" onAction="#remove" prefHeight="30.0" prefWidth="119.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;" text="Remove">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+   </children>
+</Pane>
+        </children>
+        </AnchorPane>

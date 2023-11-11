@@ -1,0 +1,10 @@
+Masala Fried Rice,65.0
+Dosa,12.0
+Rava Roast,65.0
+Channa Masala,55.0
+Schezwan Noodles,75.0
+Veg Puff,12.0
+Egg Puff,20.0
+Cream Bun,15.0
+Badam Cake,50.0
+Paper Boat,20.0

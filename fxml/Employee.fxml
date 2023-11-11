@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfk.Employee">
+   <children>
+      <Pane prefHeight="110.0" prefWidth="900.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="52.0" prefWidth="131.0"
+                    style="-fx-background-color: #19A7CE; -fx-background-radius: 0px 0px 40px 0px;" text="Back"
+                    textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Text layoutX="689.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="110.0" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #19A7CE;">
+         <children>
+            <Label layoutX="26.0" layoutY="65.0" text="ID  :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="52.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="Modify Employee">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="employeeID" layoutX="99.0" layoutY="64.0" prefHeight="25.0" prefWidth="179.0"
+                       promptText="Enter Employee ID" />
+            <Line endX="-91.60000610351562" endY="471.0" layoutX="394.0" layoutY="29.0" startX="-91.60000610351562"
+                  startY="-28.600006103515625" stroke="WHITE" strokeWidth="3.0" />
+            <Label layoutX="26.0" layoutY="99.0" text="Name :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="131.0" text="Salary :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="employeeName" layoutX="99.0" layoutY="97.0" prefHeight="25.0" prefWidth="179.0"
+                       promptText="Enter Employee Name" />
+            <Button layoutX="24.0" layoutY="167.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0"
+                    prefWidth="253.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;" text="Add"
+                    textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="24.0" layoutY="205.0" mnemonicParsing="false" onAction="#remove" prefHeight="25.0"
+                    prefWidth="253.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;" text="Remove"
+                    textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="24.0" layoutY="244.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0"
+                    prefWidth="253.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;" text="Update"
+                    textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="EmployeeTab" layoutX="313.0" layoutY="9.0" prefHeight="480.0" prefWidth="578.0">
+               <columns>
+                  <TableColumn fx:id="EmpID" prefWidth="152.79998779296875" text="Employee ID" />
+                  <TableColumn fx:id="Name" prefWidth="278.3999938964844" text="Name" />
+                  <TableColumn fx:id="Salary" prefWidth="151.2000732421875" text="Salary" />
+               </columns>
+            </TableView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="305.0" pickOnBounds="true"
+                       preserveRatio="true">
+               <image>
+                  <Image url="@employee.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="salary" layoutX="99.0" layoutY="129.0" prefHeight="25.0" prefWidth="179.0"
+                       promptText="Enter Salary" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+
+Cream Bun,15,200
+Corn Puff,200,500
+Cashew Nut,10000,1000
+Badam,500,100
+Tomato,1500,10
+Dosa Batter,1200,12

@@ -1,0 +1,3 @@
+GROCERYTESTDEL,Bandi,false
+SAMPREETH123,Harish Vijay,true
+5869,Viishal,false
