@@ -1,6 +1,6 @@
 # ```Integrated Management System : Consumer Goods``` 
 
-<img src="assets/readme/banner.png" alt="Integrated Management System Banner">
+![Banner](assets/readme/banner.png)
 
 ## **Description 📑**
 The Integrated Management System for Canteen, Store, and Delivery is a comprehensive and streamlined solution designed to enhance the efficiency of managing canteen operations, store inventory, and delivery services within an organization. This project leverages Java as the primary programming language and JavaFX for creating an intuitive and user-friendly graphical user interface (GUI).
